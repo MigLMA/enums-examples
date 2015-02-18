@@ -25,7 +25,7 @@ public enum ConfigParam {
         return paramName;
     }
 
-    public Class<?> getType() {
-        return type;
+    public String getTypeName() {
+        return type.getSimpleName();
     }
 }

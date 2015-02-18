@@ -19,7 +19,7 @@ public abstract class AbstractConfigDAO implements ConfigDAO {
             throw new IllegalArgumentException(
                     param.getParamName()+
                             " value must be an instance of " +
-                            param.getType().getSimpleName());
+                            param.getTypeName());
         }
 
     }
