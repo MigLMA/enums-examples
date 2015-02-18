@@ -9,7 +9,7 @@ public class Oven {
     }
 
     public void reset() {
-        state = OvenState.BEGIN;
+        state = OvenState.getInitialState();
     }
 
     public void click() {

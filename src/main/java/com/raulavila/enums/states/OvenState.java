@@ -8,6 +8,10 @@ enum OvenState {
     HEATING("Oven is heating", COOKING),
     BEGIN("Oven is starting", HEATING);
 
+    public static OvenState getInitialState() {
+        return BEGIN;
+    }
+    
     private final String value;
     private final OvenState next;
     

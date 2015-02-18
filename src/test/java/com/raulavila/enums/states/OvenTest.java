@@ -23,6 +23,8 @@ public class OvenTest {
         oven.click();
         assertThat(oven.getState()).isEqualTo("Oven finished cooking");
 
+        assertThat(oven.hasFinished()).isTrue();
+        
         try {
             oven.click();
         } catch (IllegalStateException e) {
